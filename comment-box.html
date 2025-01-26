@@ -25,6 +25,9 @@
             maiores, laudantium necessitatibus distinctio dolor a hic, rerum illum dolores?</p>
     </div>
 
+ 
+
+
 
     <div>
 
@@ -35,6 +38,28 @@
         <button id="btn-post"> post</button>
     </div>
 
+<br>
+
+    <div>    
+
+ 
+        <button id=" make-Green"> Make  Green </button>
+     </div>
+    
+
+     <div>   
+        <script>  
+        const makeGreenButton =document.getElementById(' make-Green') ;
+        makeGreenButton.addEventListener('click' , function makeGreen () { 
+        document.body.style.backgroundColor ='green' ;
+        
+        })  
+        
+        </script>
+        
+        
+        </div>
+
 
     <script>
 
@@ -43,17 +68,21 @@
             const newComment = commentBox.value;
 
 
-            const commentContainer = document.getElementById('comment-container');
+            const commentContainer = document.getElementById('comment-container'); 
             const p = document.createElement('p');
             p.innerText = newComment;
             commentContainer.appendChild(p);
 
-             commentBox.value ='' ;
+            commentBox.value = '';
 
         })
 
     </script>
 
+
+
+        
+        
 </body>
 
 </html>
